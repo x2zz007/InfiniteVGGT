@@ -1,5 +1,13 @@
-<div align="center">
-<h1>InfiniteVGGT: Visual Geometry Grounded Transformer for Endless Streams</h1>
+<!-- <div align="center">
+<img src="assets/InfiniteVGGT_Logo.jpg" alt="Autolab Logo" style="height: 30px; vertical-align: middle;">
+<h1 style="display: inline-block; vertical-align: middle; margin: 0; font-size: 24px;">
+InfiniteVGGT: Visual Geometry Grounded Transformer for Endless Streams</h1>
+</div> -->
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px;">
+    <img src="assets/InfiniteVGGT_Logo.jpg" style="height: 40px; width: auto;">
+    <h1 style="margin: 0; font-size: 24px; line-height: 1.2;">
+        InfiniteVGGT: Visual Geometry Grounded Transformer for Endless Streams
+    </h1>
 </div>
 
 <div align="center">
