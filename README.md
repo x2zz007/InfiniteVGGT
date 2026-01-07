@@ -44,6 +44,9 @@
 - [Jan 6 , 2026] Paper release.
 - [Jan 6 , 2026] Code release.
 
+## 🔍 Recommendation
+- Welcome to check out our previous collaborative work [FastVGGT](https://github.com/mystorm16/FastVGGT).
+
 
 ## 📖 Overview
 We propose **InfiniteVGGT**, a causal visual geometry transformer that utilizes a training-free rolling memory mechanism to enable stable, infinite-horizon streaming, and introduce the **Long3D** benchmark to rigorously evaluate long-term continuous 3D geometry performance.
