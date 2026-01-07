@@ -49,7 +49,7 @@
 We propose **InfiniteVGGT**, a causal visual geometry transformer that utilizes a training-free rolling memory mechanism to enable stable, infinite-horizon streaming, and introduce the **Long3D** benchmark to rigorously evaluate long-term continuous 3D geometry performance.
 Our main contributions are summarized as follows:
 
-1. An unbounded memory architecture \mymethod{} for continuous 3D geometry understanding, built on a novel, dynamic, and interpretable explicit memory system.
+1. An unbounded memory architecture InfiniteVGGT for continuous 3D geometry understanding, built on a novel, dynamic, and interpretable explicit memory system.
 2. State-of-the-art performance on long-sequence benchmarks and a unique capability for robust, infinite-horizon reconstruction without memory overflow.
 3. The Long3D benchmark, a new dataset for the rigorous evaluation of long-term performance, addressing a critical gap in the field.
 
