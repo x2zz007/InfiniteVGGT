@@ -16,7 +16,7 @@ class StreamVGGTOutput(ModelOutput):
     views: Optional[torch.Tensor] = None
 
 class StreamVGGT(nn.Module, PyTorchModelHubMixin):
-    def __init__(self, img_size=518, patch_size=14, embed_dim=1024, total_budget=1000):
+    def __init__(self, img_size=518, patch_size=14, embed_dim=1024, total_budget=1200000):
         super().__init__()
 
         self.aggregator = Aggregator(img_size=img_size, patch_size=patch_size, embed_dim=embed_dim)

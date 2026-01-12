@@ -163,6 +163,7 @@ def main():
     parser.add_argument("--vis_threshold", type=float, default=1.5)
     parser.add_argument("--frame_interval", type=int, default=1)
     parser.add_argument("--port", type=int, default=9999)
+    parser.add_argument("--total_budget", type=int, default=1200000)
     args = parser.parse_args()
 
     # Load Data
@@ -174,7 +175,7 @@ def main():
     if not os.path.exists(ckpt_path):
         sys.exit(f"Checkpoint not found at {ckpt_path}")
         
-    model = StreamVGGT().to(args.device)
+    model = StreamVGGT(total_budget=args.total_budget).to(args.device)
     model.load_state_dict(torch.load(ckpt_path, map_location="cpu"), strict=True)
     model.eval()
 
