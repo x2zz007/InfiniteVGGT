@@ -43,6 +43,7 @@
 ## 📰 News
 - [Jan 6 , 2026] Paper release.
 - [Jan 6 , 2026] Code release.
+- [Jan 19 , 2026] Long3D dataset release.
 
 ## 🔍 Recommendation
 - Welcome to check out our previous collaborative work [FastVGGT](https://github.com/mystorm16/FastVGGT).
@@ -104,11 +105,38 @@ We provide demo code based on the [NRGBD](https://github.com/dazinovic/neural-rg
 python demo_viser.py  \
     --seq_path path/to/nrgbd/image_sequence \
     --frame_interval 10 \
-    --gt_path path/to/nrgbd/gt_camera \ (Optional)
+    --gt_path path/to/nrgbd/gt_camera (Optional)
 ```
 
+## 🧊 Long3D Dataset
+
+The **Long3D Dataset** is a benchmark designed for long-sequence 3D scene reconstruction. It provides 10Hz image streams paired with dense ground truth point clouds.
+
+### 📊 Data Description
+
+| File Name | Description |
+| :--- | :--- |
+| **`image.7z`** | Continuous image stream data captured at a frequency of 10 Hz. |
+| **`dense_cloud_map.pcd`** | Global ground truth point clouds, acquired via a 3D spatial scanner. |
+
+---
+### 📥 Download Instructions
+
+#### Option1: Hugging Face CLI:
+
+The most efficient way to download the dataset is using the huggingface-hub CLI. Ensure you have the library installed (`pip install -U huggingface_hub`).
+```
+# export HF_ENDPOINT=https://hf-mirror.com
+hf download --repo-type dataset \
+    --resume-download AutoLab-SJTU/Long3D \
+    --local-dir ./Long3D
+```
+#### Option2: Manual Access:
+
+Alternatively, you can browse and download files directly from the [Long3D](https://huggingface.co/datasets/AutoLab-SJTU/Long3D) dataset.
+
 ## 📋 Checklist
-- [ ] Release the Dataset.
+- [ √ ] Release the Dataset.
 
 ## 🙏 Acknowledgement
 We would like to acknowledge the following open-source projects that served as a foundation for our implementation:

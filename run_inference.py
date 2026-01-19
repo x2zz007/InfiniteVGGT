@@ -136,7 +136,7 @@ def run_inference(args: argparse.Namespace):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Run StreamVGGT inference from the command line.",
+        description="Run InfiniteVGGT inference from the command line.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
     parser.add_argument(
@@ -165,7 +165,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output_path",
         type=str,
-        default="./streamvggt_inference.pt",
+        default="./inference_results",
         help="Path to the directory containing the complete results"
     )
     
